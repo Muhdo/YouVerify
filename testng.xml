@@ -5,7 +5,7 @@
         <listener class-name="Utils.TestListener.TestListener"></listener>
         <listener class-name="Utils.ExtentReporter.ExtentReport"></listener>
     </listeners>
-    <test verbose="2" preserve-order="true" name="C:/Selenium files/YouVerify">
+    <test name="YouVerify">
         <classes>
             <class name="Tests.test1">
             </class>
