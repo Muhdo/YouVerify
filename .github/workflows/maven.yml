@@ -30,7 +30,7 @@ jobs:
         cache: maven
     - name: Run Tests with TestNG
       run: | 
-         mvn clean install -X
+         mvn -B clean install -Dsurefire.suiteXmlFiles="testng.xml"
       shell: cmd
 
  
