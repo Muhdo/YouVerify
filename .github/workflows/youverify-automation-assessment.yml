@@ -1,16 +1,15 @@
-name: YouVerify Automation Assessment
+
+name: Java CI with Maven
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - "master"
+    branches: [ "master" ]
   pull_request:
-    branches:
-      - "master"
+    branches: [ "master" ]
 
 jobs:
   build:
+
     runs-on: windows-latest
 
     steps:
@@ -21,7 +20,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-      - name: Build with Maven
+      - name: Run Tests with TestNG
         run: |
           mvn -B clean install -Dsurefire.suiteXmlFiles-"testng.xml"
-          shell: cmd
+        shell: cmd
+
+ 
