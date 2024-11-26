@@ -1,13 +1,42 @@
-# YouVerify
+# E2E Testing for SauceDemo Application
 
-## How to Set Up and Run the Tests
-There are two options to run the test,
-# Option 1 is Running the Tests via GitHub Actions.
-1) Clone the repository to your local machine using the following command.
-2) The tests are automatically run whenever a push or pull request is made to the main branch of the repository.
-3) To run the code on github actions manually, go to the repository and go to the actions tab, select the name of your workflow (YouVerify Web Automation Assessment CI with maven), Click on the run workflow button and select Run workflow
+This project is an end-to-end (E2E) testing suite for the SauceDemo application using Selenium. The suite covers functionalities such as login, cart operations, inventory management, and checkout processes. It leverages the Page Object Model (POM) to enhance maintainability and readability.
 
-# Option 2 is Running the Tests via TestNG Locally
-1) Clone the repository to your local machine using the following command
-2) Navigate to the testng.xml File and run the tests
-3) Once the tests complete, you can view the results in HTML format by going to the reports folder and selecting to open the file via chrome.
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Test Data](#test-data)
+- [Running Tests](#running-tests)
+
+## Project Overview
+
+The project consists of the following main components:
+
+- **Page Objects**: Encapsulate the UI interactions for different pages (Login, Inventory, Cart, Checkout).
+- **Tests**: Test suites that validate the application functionalities using the Selenium and TestNG framework.
+
+### Page Objects
+
+- `LoginPage`: Handles actions related to user login.
+- `InventoryPage`: Manages inventory-related actions, including filtering and adding items to the cart.
+- `CartPage`: Handles operations related to viewing and modifying the shopping cart.
+- `CheckoutPage`: Manages the checkout process.
+
+## Installation
+
+To set up this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Muhdo/YouVerify.git
+   cd YouVerify
+   Import the project into your IDE as a Maven project.
+   Install project dependencies
+   Run the testng file
+   The tests are automatically run whenever a push or pull request is made to the main branch of the repository.
+
+2. Run the project from github actions:
+    ```bash
+   To run the code on github actions manually, go to the repository and go to the actions tab, select the name of your workflow (YouVerify Web Automation Assessment CI with maven), Click on the run workflow button and select Run workflow
