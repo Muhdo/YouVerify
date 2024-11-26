@@ -9,7 +9,7 @@
     </listeners>
     <test name="YouVerify">
         <classes>
-            <class name="Tests.LoginTest">
+            <class name="Tests.AssessmentTest">
             </class>
         </classes>
     </test>

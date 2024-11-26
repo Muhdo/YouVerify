@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-public class LoginTest extends TestBase {
+public class AssessmentTest extends TestBase {
 
     LoginPage loginPage;
     ProductPage productPage;
