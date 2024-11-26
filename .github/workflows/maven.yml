@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: YouVerify Web Automation Assessment CI with maven
 
 on:
   push:
