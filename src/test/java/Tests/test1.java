@@ -38,7 +38,7 @@ public class test1 extends TestBase {
         landingPage.clickAddToCartBtn();
         Assert.assertTrue(landingPage.ValidateProductAddedToCart(), "Product not added to cart");
         landingPage.clickCancelBtn();
-        sleep(3);
+        sleep(5);
 
     }
 
