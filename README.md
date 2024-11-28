@@ -35,7 +35,7 @@ To set up this project locally, follow these steps:
    Import the project into your IDE as a Maven project.
    Install project dependencies
    Run the testng file
-   The tests are automatically run whenever a push or pull request is made to the main branch of the repository.
+   The tests are runs automatically every day at 12pm and whenever a push or pull request is made to the main branch of the repository.
 
 2. Run the project from github actions:
     ```bash
