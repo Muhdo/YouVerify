@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: YouVerify Web Automation Assessment CI with maven
+name: YouVerify Web Automation Assessment CI with Maven
 
 on:
   push:
@@ -14,10 +14,11 @@ on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * *' # Runs every day at 12:00 PM 
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
@@ -32,5 +33,3 @@ jobs:
       run: | 
          mvn -B clean install -Dsurefire.suiteXmlFiles="testng.xml"
       shell: cmd
-
- 
